@@ -1,0 +1,12 @@
+version: "3"
+
+services: 
+    jupyter-nltk:
+        build: ./nltk-notebook
+        environment: 
+            - JUPYTER_ENABLE_LAB=yes
+        ports: 
+            - 8888:8888
+        volumes: 
+            - ./nltk-notebook/data/nltk:/usr/local/share/nltk_data
+            - ./nltk-notebook/data/home:/home/${USER}
