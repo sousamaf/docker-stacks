@@ -1,7 +1,7 @@
 version: "3"
 
 services: 
-    jupyter-nltk:
+    nltk-notebook:
         build: ./nltk-notebook
         environment: 
             - JUPYTER_ENABLE_LAB=yes
